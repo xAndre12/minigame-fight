@@ -10,33 +10,54 @@
 </head>
 <body>
     <header>
-        <p class="player1life">
-            Player1:<span class="life1">100</span> HP
+        <div>
+            <p class="player1life">
+                Player1:<span class="life1">100</span> HP
+            </p>
+            <p class="sleepCooldown" >
+                Ability Sleep: <span class="sleepNumber">0</span>
+            </p>
+            <p class="invisibleCooldown" >
+                Ability Invisible: <span class="invisibleNumber">0</span>
+            </p>
+        </div>
+        <div>
+            <p class="player2life">
+                Player2:<span class="life2">100</span> HP
+            </p >
+            <p class="lavabladeCooldown" >
+                <span class="lavabladeNumber">0</span>:Ability Lavablade 
+            </p>
+            <p class="burnedCooldown" >
+                <span class="burnedNumber">0</span>:Ability Burned
+            </p>
+        </div>
+        <p class="win">
+            <!-- Player <span>1</span>won!! -->
         </p>
-        <p class="player2life">
-            Player2:<span class="life2">100</span> HP
-        </p >
     </header>
     <main>
         <div class="character-1-container" >
+            <img src="./img/pixel-fire-gif-1.gif" alt="fire" class="fire">
             <img src="./img/PngItem_497612.png" alt="character 1" class="fight1" />
             <div class="character-1-abilitys">
-                <div class="abilty-1-container">
+                <div class="abilty-1-container">    
                     <img src="/img/gotosleep.png" alt="gotosleep" class="sleep">
-                    <div class="ability-1-player-1 selected"> <b>GoToSleep</b> <br>makes your enemy to fall asleep</div>
+                    <div class="ability-1-player-1 selected"> <b>GoToSleep</b> <br>makes your enemy to fall asleep for 5 secs</div>
                 </div>
                <div class="abilty-2-container">
                 <img src="/img/ability invisible.png" alt="invisible" class="invisible">
                 <div class="ability-2-player-1 selected">
-                    <b>Invisible</b> <br> makes you be invisible for a certified time
+                    <b>Invisible</b> <br> makes you be invisible for a 5 seconds
                 </div>
                </div>
                
             </div>
         </div>
         <div class="character-2-container">
+            <img src="./img/sleep-computer-icons-clip-art-sleepy-41454d0775f0193eca3d153d01665bb8.png" alt="sleep" class= "zzz" >
             <img src = "/img/PngItem_497801.png" alt="character2" class="fight2"/>
-
+            <img src="./img/SeekPng.com_bullet-fire-png_3253322.png" alt="fireblade" class="bladeOfLava">
             <div class="character-2-abilitys">
                 <div class="abilty-3-container">
                     <img src="./img/blade of lava.png" alt="fire blade"class="fireblade">
@@ -55,6 +76,9 @@
         <img src="/img/Lovepik_com-400752395-vs-war.png" class="vs">
         <button class="start">
             START
+        </button>
+        <button class="retry">
+            RETRY
         </button>
         <div class="numbers">
             <img src="/img/1.png" class="nr1">
